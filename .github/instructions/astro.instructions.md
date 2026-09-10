@@ -32,6 +32,13 @@ const games = await getAllGames(getDatabase());
 </Layout>
 ```
 
+## Component API Documentation
+
+- Every reusable component in `src/components/` and `src/layouts/` must define a `Props` interface in its frontmatter, even when the interface is small.
+- Document the `Props` interface and any non-obvious prop with TSDoc comments so callers can understand the component contract without reading its markup.
+- Describe defaults, accepted values, and accessibility implications when they are not clear from the prop name or type.
+- Use comments to explain intent or a non-obvious rendering decision; do not annotate markup by repeating what the element or expression already communicates.
+
 ## Layouts
 
 - Create reusable layout components in `src/layouts/`
