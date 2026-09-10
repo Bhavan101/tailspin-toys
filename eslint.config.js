@@ -39,5 +39,10 @@ export default [
     languageOptions: {
       parser: tseslint.parser,
     },
+    rules: {
+      // Keep the repository's TypeScript formatting consistent.
+      semi: ["error", "always"],
+      "comma-dangle": ["error", "always-multiline"],
+    },
   },
 ];
